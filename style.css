@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+}
+#wrapper {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-image: url('./assets/gradient-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.haeding-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+    padding: 10px;
+}
+.heading-section-para {
+    color: white;
+    padding: 10px 50px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(7px);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    display: none;
+}
+
+.boxes {
+    width: 90%;
+    max-width: 20rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(7px);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+.box {   
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 3rem;
+    color: white;
+}
+.box-background {
+    background-color: green;
+}
+.box-1, .box-2, .box-4, .box-5 {
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+}
+.box-3, .box-6 {
+    border-bottom: 2px solid white;
+}
+.box-7, .box-8 {
+    border-right: 2px solid white;
+}
+.new-game-section{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4%;
+    padding: 10px;
+}
+.new-game {
+    color: white;
+    padding: 5px 25px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(7px);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    font-size: 0.9rem;
+    cursor: pointer;
+    display: none;
+}
+.active {
+    display: flex;
+}
